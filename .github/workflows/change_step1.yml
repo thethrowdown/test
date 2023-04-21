@@ -1,4 +1,4 @@
-name: hello-world
+name: change_step1
 on: workflow_dispatch
 jobs:
   my-job:
