@@ -1,0 +1,11 @@
+name: github_action_pipeline1
+on: workflow_dispatch
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step-1 
+      - run: echo "Hello World!"
+      - name: my-step-2 
+      - run: echo "Hello World2!"
+      
