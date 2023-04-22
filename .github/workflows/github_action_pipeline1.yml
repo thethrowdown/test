@@ -6,3 +6,8 @@ jobs:                             #Required - Groups together all the jobs that 
     steps:                        #Required - Groups together all the steps that run in the my-job job defined above. 
       - name: my-step-1 
         run: echo "Hello World!"    #Optional - The run keyword tells the job to execute a command on the runner.
+  my-job2:                         #Required - Defines a job named my-job. The child keys will define properties of the job.
+    runs-on: ubuntu-latest        #Required - Configures the job to run on the latest version of an Ubuntu Linux runner. 
+    steps:                        #Required - Groups together all the steps that run in the my-job job defined above. 
+      - name: my-step-2 
+        run: echo "Hello World!"    #Optional - The run keyword tells the job to execute a command on the runner.
