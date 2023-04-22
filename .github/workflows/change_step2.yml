@@ -1,8 +1,0 @@
-name: change_step2
-on: workflow_dispatch
-jobs:
-  my-job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: my-step
-        run: echo "Hello World2!"
