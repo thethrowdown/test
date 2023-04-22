@@ -5,4 +5,4 @@ jobs:                             #Required - Groups together all the jobs that 
     runs-on: ubuntu-latest        #Required - Configures the job to run on the latest version of an Ubuntu Linux runner. 
     steps:                        #Required - Groups together all the steps that run in the my-job job defined above. 
       - name: my-step-1 
-      - run: echo "Hello World!"    #Optional - The run keyword tells the job to execute a command on the runner.
+        run: echo "Hello World!"    #Optional - The run keyword tells the job to execute a command on the runner.
