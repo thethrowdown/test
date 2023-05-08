@@ -3,14 +3,14 @@ on: workflow_dispatch             #Required - Specifies the trigger for this wor
 jobs:                             #Required - Groups together all the jobs that run in the github_action_pipeline1 workflow defined above. 
   my-job:                         #Required - Defines a job named my-job. The child keys will define properties of the job.
     runs-on: ubuntu-latest        #Required - Configures the job to run on the latest version of an Ubuntu Linux runner. 
-    environment: prod             #Optional - tells github which environment this job runs on. 
+    #environment: prod             #Optional - tells github which environment this job runs on. 
     steps:                        #Required - Groups together all the steps that run in the my-job job defined above. 
       - name: my-step-1 
         run: echo "Hello World!"    #Optional - The run keyword tells the job to execute a command on the runner.
   deploy:
     name: Deploy
     runs-on: ubuntu-latest
-    environment: prod             #Optional - tells github which environment this job runs on. 
+    #environment: prod             #Optional - tells github which environment this job runs on. 
     steps:
       - name: ServiceNow Change
         uses: ServiceNow/servicenow-devops-change@v1.35.2 #ServiceNow/servicenow-devops-change@v1.34.2
@@ -26,7 +26,7 @@ jobs:                             #Required - Groups together all the jobs that 
           timeout: '3600'
   my-job2:                         #Required - Defines a job named my-job. The child keys will define properties of the job.
     runs-on: ubuntu-latest        #Required - Configures the job to run on the latest version of an Ubuntu Linux runner. 
-    environment: prod             #Optional - tells github which environment this job runs on. 
+    #environment: prod             #Optional - tells github which environment this job runs on. 
     steps:                        #Required - Groups together all the steps that run in the my-job job defined above. 
       - name: my-step-2 
         run: echo "Hello World!"    #Optional - The run keyword tells the job to execute a command on the runner.
