@@ -31,5 +31,4 @@ jobs:                             #Required - Groups together all the jobs that 
       - name: my-step-2 
         run: echo "Hello World!"    #Optional - The run keyword tells the job to execute a command on the runner.
   my-deploy-job3:
-    name: my-deploy-job3
-    uses: thethrowdown/test/.github/workflows/deploy.yml@v1
+    uses: ./.github/workflows/deploy.yml
