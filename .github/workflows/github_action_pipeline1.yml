@@ -32,7 +32,4 @@ jobs:                             #Required - Groups together all the jobs that 
         run: echo "Hello World!"    #Optional - The run keyword tells the job to execute a command on the runner.
   my-deploy-job3:
     name: my-deploy-job3
-    runs-on: ubuntu-latest
-    steps:
-      - name: Deploy
-        uses: thethrowdown/test/.github/workflows/deploy@v1
+    uses: thethrowdown/test/.github/workflows/deploy@v1
