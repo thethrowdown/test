@@ -31,4 +31,4 @@ jobs:                             #Required - Groups together all the jobs that 
       - name: my-step-2 
         run: echo "Hello World!"    #Optional - The run keyword tells the job to execute a command on the runner.
   my-job3:                         #Required - Defines a job named my-job. The child keys will define properties of the job.
-   uses: ./.github/workflows/deploy.yml
+   uses: .github/workflows/deploy.yml
