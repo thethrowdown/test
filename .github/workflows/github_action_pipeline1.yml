@@ -35,4 +35,4 @@ jobs:                             #Required - Groups together all the jobs that 
     runs-on: ubuntu-latest
     steps:
       - name: Deploy
-        uses: .github/workflows/deploy@v1
+        uses: test/.github/workflows/deploy@v1
