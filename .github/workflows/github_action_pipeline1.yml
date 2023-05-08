@@ -30,3 +30,9 @@ jobs:                             #Required - Groups together all the jobs that 
     steps:                        #Required - Groups together all the steps that run in the my-job job defined above. 
       - name: my-step-2 
         run: echo "Hello World!"    #Optional - The run keyword tells the job to execute a command on the runner.
+  my-deploy-job3:
+    name: my-deploy-job3
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy
+        uses: .github/workflows/deploy@v1
