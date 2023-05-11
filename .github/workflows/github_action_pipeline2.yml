@@ -1,4 +1,4 @@
-name: github_action_pipeline1     #Optional - The name of the workflow as it will appear in the "Actions" tab of the GitHub
+name: github_action_pipeline2     #Optional - The name of the workflow as it will appear in the "Actions" tab of the GitHub
 on: workflow_dispatch             #Required - Specifies the trigger for this workflow. 
 jobs:                             #Required - Groups together all the jobs that run in the github_action_pipeline1 workflow defined above. 
   my-job:                         #Required - Defines a job named my-job. The child keys will define properties of the job.
