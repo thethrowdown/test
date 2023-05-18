@@ -32,4 +32,4 @@ jobs:                             #Required - Groups together all the jobs that 
       - name: my-step-2 
         run: echo "Hello World!"    #Optional - The run keyword tells the job to execute a command on the runner.
   my-deploy-job3:
-    uses: ./.github/workflows/deploy.yml
+    uses: ./.github/workflows/deploy_pipeline.yml
